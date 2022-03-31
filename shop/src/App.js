@@ -5,6 +5,7 @@ import Data from './data.js';
 import {Link,Route,Switch} from 'react-router-dom';
 import Detail from './Detail.js'
 import axios from 'axios';
+import Cart from './Cart.js';
 
 function App() {
   let [shoes,setShoes] = useState(Data);
@@ -42,6 +43,9 @@ function App() {
           <Detail shoes={shoes} 재고={재고} 재고변경={재고변경}/>
         </Route>
 
+        <Route path="/cart">
+          <Cart></Cart>
+        </Route>
 
       </Switch>
 
