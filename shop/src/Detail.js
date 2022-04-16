@@ -45,7 +45,7 @@ function Detail(props){
           <p>{findId.price}</p>
           <Info 재고={props.재고}></Info>
           <button className="btn btn-danger" onClick={()=>{
-            props.dispatch({type : '항목추가', payload : {id: 2, name : '새로운 상품', quan:1}})
+            props.dispatch({type : '항목추가', payload : {id: findId.id, name : findId.title, quan: 1}})
             history.push('/cart');
           }}>주문하기</button>
           &nbsp; 

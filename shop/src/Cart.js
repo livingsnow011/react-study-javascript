@@ -27,10 +27,10 @@ function Cart(props){
                                     <td>{ a.quan }</td>
                                     <td> 
                                         <button onClick={
-                                        ()=>{ dispatch({type : '수량증가'}) }}>+</button>
+                                        ()=>{ dispatch({type : '수량증가', data: a.id}) }}>+</button>
                                         &nbsp;
                                         <button onClick={
-                                        ()=>{ dispatch({type : '수량감소'}) }}>-</button>
+                                        ()=>{ dispatch({type : '수량감소', data: a.id}) }}>-</button>
                                     </td>
                                 </tr>
                             )
